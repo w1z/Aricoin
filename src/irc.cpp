@@ -1,6 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2011-2012 Litecoin Developers
+// Copyright (c) 2014 Aricoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -208,11 +209,11 @@ void ThreadIRCSeed(void* parg)
 
 void ThreadIRCSeed2(void* parg)
 {
-    /* Disable IRC Seeding Entirely */
-    return;
-
     /* Dont advertise on IRC if we don't allow incoming connections */
     if (mapArgs.count("-connect") || fNoListen)
+        return;
+
+    if (!GetBoolArg("-irc", false))
         return;
 
     printf("ThreadIRCSeed started\n");
@@ -221,21 +222,21 @@ void ThreadIRCSeed2(void* parg)
 
     while (!fShutdown)
     {
-        CService addrConnect("92.243.23.21", 6667); // irc.lfnet.org
-
-        CService addrIRC("irc.lfnet.org", 6667, true);
-        if (addrIRC.IsValid())
-            addrConnect = addrIRC;
+        CService addrConnect("irc.lfnet.org", 6667, true);
 
         SOCKET hSocket;
         if (!ConnectSocket(addrConnect, hSocket))
         {
-            printf("IRC connect failed\n");
-            nErrorWait = nErrorWait * 11 / 10;
-            if (Wait(nErrorWait += 60))
-                continue;
-            else
-                return;
+			addrConnect = CService("pelican.heliacal.net", 6667, true);
+			if (!ConnectSocket(addrConnect, hSocket))
+			{
+				printf("IRC connect failed\n");
+				nErrorWait = nErrorWait * 11 / 10;
+				if (Wait(nErrorWait += 60))
+					continue;
+				else
+					return;
+			}
         }
 
         if (!RecvUntil(hSocket, "Found your hostname", "using your IP address instead", "Couldn't look up your hostname", "ignoring hostname"))
@@ -294,14 +295,14 @@ void ThreadIRCSeed2(void* parg)
         }
         
         if (fTestNet) {
-            Send(hSocket, "JOIN #litecoinTEST3\r");
-            Send(hSocket, "WHO #litecoinTEST3\r");
+            Send(hSocket, "JOIN #AricoinTEST3\r");
+            Send(hSocket, "WHO #AricoinTEST3\r");
         } else {
-            // randomly join #litecoin00-#litecoin99
+            // randomly join #Aricoin00-#Aricoin99
             int channel_number = GetRandInt(100);
-            channel_number = 0; // Litecoin: for now, just use one channel
-            Send(hSocket, strprintf("JOIN #litecoin%02d\r", channel_number).c_str());
-            Send(hSocket, strprintf("WHO #litecoin%02d\r", channel_number).c_str());
+            channel_number = 0; // Aricoin: for now, just use one channel
+            Send(hSocket, strprintf("JOIN #Aricoin%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("WHO #Aricoin%02d\r", channel_number).c_str());
         }
 
         int64 nStart = GetTime();

@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.6.9.2
+!define VERSION 0.6.3
 !define COMPANY "Litecoin project"
 !define URL http://www.litecoin.org/
 
@@ -45,13 +45,13 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile litecoin-0.6.9.2-win32-setup.exe
+OutFile litecoin-0.6.3-win32-setup.exe
 InstallDir $PROGRAMFILES\Litecoin
 CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 0.6.9.2
+VIProductVersion 0.6.3.0
 VIAddVersionKey ProductName Litecoin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
@@ -98,7 +98,7 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "litecoin" "URL Protocol" ""
+    WriteRegStr HKCR "litceoin" "URL Protocol" ""
     WriteRegStr HKCR "litecoin" "" "URL:Bitcoin"
     WriteRegStr HKCR "litecoin\DefaultIcon" "" $INSTDIR\litecoin-qt.exe
     WriteRegStr HKCR "litecoin\shell\open\command" "" '"$INSTDIR\litecoin-qt.exe" "$$1"'

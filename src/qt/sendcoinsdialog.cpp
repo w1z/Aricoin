@@ -66,7 +66,7 @@ void SendCoinsDialog::on_sendButton_clicked()
 
     if(!model)
         return;
-
+	
     for(int i = 0; i < ui->entries->count(); ++i)
     {
         SendCoinsEntry *entry = qobject_cast<SendCoinsEntry*>(ui->entries->itemAt(i)->widget());
@@ -165,7 +165,7 @@ void SendCoinsDialog::on_sendButton_clicked()
 }
 
 void SendCoinsDialog::clear()
-{
+{	
     // Remove entries until only one left
     while(ui->entries->count())
     {

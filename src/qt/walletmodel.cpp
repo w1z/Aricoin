@@ -181,6 +181,7 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(const QList<SendCoinsRecipie
         int64 nFeeRequired = 0;
         bool fCreated = wallet->CreateTransaction(vecSend, wtx, keyChange, nFeeRequired);
 
+
         if(!fCreated)
         {
             if((total + nFeeRequired) > wallet->GetBalance())
