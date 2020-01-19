@@ -33,7 +33,7 @@ SetCompressor /SOLID lzma
 Var StartMenuGroup
 
 # Installer pages
-!insertmacro MUI_PAGE_WELCOME
+!insertmacro c
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_STARTMENU Application $StartMenuGroup
 !insertmacro MUI_PAGE_INSTFILES
@@ -51,7 +51,7 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 1.3.5
+VIProductVersion 0.1.3.5
 VIAddVersionKey ProductName aricoin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
