@@ -1,10 +1,10 @@
-# Aricoin
+# Aricoin Network Source 
 
 ![Aricoin](http://aricoin.org/assets/aricoin-logo.svg)
 
 
-## Network Source 
-Aricoin is a a digital P2P currency descended from Bitcoin. Aricoin allows you to tip any social media user or website with just a username or web URL. Full features can be used with http://aricoinpay.com
+## Why is Aricoin Different
+Aricoin is a a digital P2P currency descended from Bitcoin. Unlike other digital currencies, Aricoin allows you to tip any social media user or website with just a username or web URL. Full features can be used with http://aricoinpay.com
 
 ## Coin Specifications
     - The default ports are 16567 (Connect) and 16568 (RPC)
