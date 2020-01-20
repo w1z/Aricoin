@@ -43,10 +43,10 @@ const std::string CLIENT_NAME("Aricoin");
 #define STRINGIFY(s) #s
 
 #define BUILD_DESC_FROM_COMMIT(maj,min,rev,build,commit) \
-    "v" STRINGIFY(maj) "." STRINGIFY(min) "." STRINGIFY(rev) "." STRINGIFY(build) "-g" commit
+    "v1.3"
 
 #define BUILD_DESC_FROM_UNKNOWN(maj,min,rev,build) \
-    "v" STRINGIFY(maj) "." STRINGIFY(min) "." STRINGIFY(rev) "." STRINGIFY(build) ""
+    "v1.3"
 
 #ifndef BUILD_DESC
 #    ifdef GIT_COMMIT_ID
