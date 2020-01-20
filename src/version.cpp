@@ -10,11 +10,10 @@
 // for both bitcoind and bitcoin-qt, to make it harder for attackers to
 // target servers or GUI users specifically.
 const std::string CLIENT_NAME("Aricoin");
-
+ 
 // Client version number
 #define CLIENT_VERSION_SUFFIX   ""
-#define BUILD_DESC   "v0.1.3.0"
-
+ 
 
 // The following part of the code determines the CLIENT_BUILD variable.
 // Several mechanisms are used for this:
@@ -44,14 +43,7 @@ const std::string CLIENT_NAME("Aricoin");
 #define STRINGIFY(s) #s
 
  
-
-#ifndef BUILD_DESC
-#    ifdef GIT_COMMIT_ID
-#        define BUILD_DESC BUILD_DESC_FROM_COMMIT(CLIENT_VERSION_MAJOR, CLIENT_VERSION_MINOR, CLIENT_VERSION_REVISION, CLIENT_VERSION_BUILD, GIT_COMMIT_ID)
-#    else
-#        define BUILD_DESC BUILD_DESC_FROM_UNKNOWN(CLIENT_VERSION_MAJOR, CLIENT_VERSION_MINOR, CLIENT_VERSION_REVISION, CLIENT_VERSION_BUILD)
-#    endif
-#endif
+ 
 
 #ifndef BUILD_DATE
 #    ifdef GIT_COMMIT_DATE
@@ -60,6 +52,8 @@ const std::string CLIENT_NAME("Aricoin");
 #        define BUILD_DATE __DATE__ ", " __TIME__
 #    endif
 #endif
+
+#define BUILD_DESC   "v0.1.3.0"
 
 const std::string CLIENT_BUILD(BUILD_DESC CLIENT_VERSION_SUFFIX);
 const std::string CLIENT_DATE(BUILD_DATE);
