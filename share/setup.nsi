@@ -5,8 +5,8 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.1.3.0
-!define COMPANY "Aricoin"
+!define VERSION 1.3.0
+!define COMPANY "Aricoin project"
 !define URL http://www.aricoin.org/
 
 # MUI Symbol Definitions
