@@ -75,7 +75,10 @@ RPC: 16568
 
 Magic Bytes:  0xc2, 0xdb, 0xf1,	 0xfd
 
+PUBKEY_ADDRESS: 11 
 
+SCRIPT_ADDRESS: 5
+	
 Genesis Hash: 6df743739be39a62277fb5f95dd9bb25c68ac03fd1293183f000315bd1c87e0f
 
 Genesis Merkle Root: 5505f6c2e7ba7a8f2eee698ee6c2d49e019ed18435c29e4f64c70c9c226b83c2
