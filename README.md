@@ -53,9 +53,9 @@ http://www.twitter.com/AricoinCurrency/
 ## Block Rewards
 Genesis block, 3.2m Used for initial launch [2014]
 
-Block 2-961, Random amount between 2841 and 15,000 [2014]
+Block 2-960, Between 2841 and 15,000 coins per block  [2014]
 
-Block 961-15,000, Random amount between 1894 and 10,000 [2014]
+Block 961-15,000, Between 1894 and 10,000 coins per block  [2014]
 
 Block 15,001-50,000, Payout 1000 coins per block [2014]
 
@@ -81,9 +81,9 @@ RPC: 16568
 
 Magic Bytes:  0xc2, 0xdb, 0xf1,	 0xfd
 
-PUBKEY_ADDRESS: 11 
+PUBKEY  Address: 11 
 
-SCRIPT_ADDRESS: 5
+SCRIPT Address: 5
 	
 Genesis Hash: 6df743739be39a62277fb5f95dd9bb25c68ac03fd1293183f000315bd1c87e0f
 
