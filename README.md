@@ -9,11 +9,11 @@ Aricoin is a digital P2P currency descended from Bitcoin. Unlike other digital c
 ## Coin Specifications
     - The default ports are 16567 (Connect) and 16568 (RPC)
 	- 3 min block target
-	- diff retarget each block
+	- Difference retargets each block (DarkGravity)
 	- 3  transaction confirmations
 	- 50 minted block confirmations
 	- Total coins will be 322,649,400
-	- Difference retargets each block
+	- Difference retarget each block
 
 
 
