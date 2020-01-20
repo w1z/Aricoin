@@ -11,6 +11,8 @@ mv build/out/boost-*.zip inputs/
 
 
 ## Build Windows
+   export VERSION=0.1.3
+
 ./bin/gbuild --commit aricoin=V1.3 ../aricoin/contrib/gitian-descriptors/gitian-win64.yml
 
 
