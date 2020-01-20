@@ -69,9 +69,9 @@ Block 3,000,001 and afterwards, Payout 1 coin per block [2032+]
 
 ## Network
 
-Port Connect: 16567
+Connect: 16567
 
-Port RPC: 16568
+RPC: 16568
 
 Magic Bytes:  0xc2, 0xdb, 0xf1,	 0xfd
 
