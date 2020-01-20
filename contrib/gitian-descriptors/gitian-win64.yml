@@ -61,6 +61,8 @@ script: |
   make $MAKEOPTS
   i686-w64-mingw32-strip release/aricoin-qt.exe
   cp release/aricoin-qt.exe $OUTDIR/
+  cp release/aricoin-qt.exe ../aricoin-qt.exe
+  cp release/aricoin-qt.exe ../../aricoin-qt.exe
   #
   cd $HOME/build/aricoin/
   mkdir nsis
