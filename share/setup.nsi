@@ -4,10 +4,10 @@ RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
- REGKEY "SOFTWARE\$(^Name)"
- VERSION 0.1.3.0
- COMPANY "Aricoin"
- URL http://www.aricoin.org/
+!define REGKEY "SOFTWARE\$(^Name)"
+!define VERSION 0.1.3.0
+!define COMPANY "Aricoin"
+!define URL http://www.aricoin.org/
 
 # MUI Symbol Definitions
 !define MUI_ICON "../share/pixmaps/bitcoin.ico"
