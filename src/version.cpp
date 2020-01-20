@@ -13,6 +13,7 @@ const std::string CLIENT_NAME("Aricoin");
 
 // Client version number
 #define CLIENT_VERSION_SUFFIX   ""
+#define BUILD_DESC   "v0.1.3.0"
 
 
 // The following part of the code determines the CLIENT_BUILD variable.
@@ -42,11 +43,7 @@ const std::string CLIENT_NAME("Aricoin");
 
 #define STRINGIFY(s) #s
 
-#define BUILD_DESC_FROM_COMMIT(maj,min,rev,build,commit) \
-    "v1.3"
-
-#define BUILD_DESC_FROM_UNKNOWN(maj,min,rev,build) \
-    "v1.3"
+ 
 
 #ifndef BUILD_DESC
 #    ifdef GIT_COMMIT_ID
