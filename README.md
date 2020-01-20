@@ -6,11 +6,6 @@
 ## Network Source 
 Aricoin is a a digital P2P currency descended from Bitcoin. Aricoin allows you to tip any social media user or website with just a username or web URL. Full features can be used with http://aricoinpay.com
 
-For more information, as well as an immediately useable, binary version of
-the Aricoin Network software, see [http://aricoin.org](http://aricoin.org).
-
-
-
 ## Coin Specifications
     - The default ports are 16567 (Connect) and 16568 (RPC)
 	- 3 min block target
@@ -23,9 +18,51 @@ the Aricoin Network software, see [http://aricoin.org](http://aricoin.org).
 
 
 ## Aricoin Links
-[http://aricoin.org](http://aricoin.org)
+Bitcointalk.org
 [https://bitcointalk.org/index.php?topic=909186.0](https://bitcointalk.org/index.php?topic=909186.0)
-[http://www.twitter.com/AricoinCurrency/](http://www.twitter.com/AricoinCurrency/)
+
+Official Website
+http://aricoin.org/
+http://aricoinpay.com/
+
+Community
+https://aricoin.org/forum/
+
+Discord
+https://discord.gg/EpCSh7p
+
+Exchanges
+https://crex24.com/exchange/ARI-BTC
+ 
+Currency History
+https://www.coingecko.com/en/coins/aricoin
+https://coinmarketcap.com/currencies/aricoin/
+https://www.investing.com/crypto/aricoin/markets
+https://coinpaprika.com/coin/ari-aricoin/
+https://cryptoslate.com/coins/aricoin/
+https://www.worldcoinindex.com/coin/aricoin
+https://coincheckup.com/coins/aricoin/purpose
+
+Mining History
+https://miningpoolstats.stream/aricoin
+https://www.coinwarz.com/cryptocurrency/coins/aricoin
+https://whattomine.com/coins/110-ari-scrypt
+
+Block Explorer
+https://chainz.cryptoid.info/ari/
+https://www.smilingmining.com/explorer/ARI
+ 
+Source
+https://github.com/AricoinCurrency/Aricoin
+
+Mining Pools
+https://pools.show/coin/ARI
+https://www.smilingmining.com/
+https://hash-to-coins.com/
+
+  
+Social
+http://www.twitter.com/AricoinCurrency/
 
 
 
