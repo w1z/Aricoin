@@ -1,9 +1,9 @@
-# Aricoin Network Code (2020)
+# Aricoin
 
 ![Aricoin](http://aricoin.org/assets/aricoin-logo.svg)
 
 
-## What is Aricoin?
+## Aricoin Network Code (2020)
 Aricoin is a a digital P2P currency descended from Bitcoin. Aricoin allows you to tip any social media user or website with just a username or web URL. Full features can be used with http://aricoinpay.com
 
 For more information, as well as an immediately useable, binary version of
