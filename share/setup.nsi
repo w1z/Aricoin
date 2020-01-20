@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 1.3.5
+!define VERSION 1.3.0
 !define COMPANY "Aricoin project"
 !define URL http://www.aricoin.org/
 
@@ -75,7 +75,7 @@ Section -Main SEC0000
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
     # Remove old wxwidgets-based-bitcoin executable and locales:
-    Delete /REBOOTOK $INSTDIR\aricoin.exe
+    Delete /REBOOTOK $INSTDIR\aricoin-qt.exe
     RMDir /r /REBOOTOK $INSTDIR\locale
 SectionEnd
 
