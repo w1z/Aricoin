@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2011-2012 Litecoin Developers
-// Copyright (c) 2014 Aricoin Developers
+// Copyright (c) 2014-2020 Aricoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -35,6 +35,7 @@ namespace Checkpoints
     ( 700000, uint256("0x84c6884f04b41837bf0cd19bf5bba2138169a5e17a43c5757f874e64fd3d3b69"))
     ( 800000, uint256("0xd7708fb16e97d5bc8c86c092c7fff65e781d045d65901932951a3defeaaee2eb"))
     ( 888000, uint256("0x747f233739b5e2cb09958db98691f24a865473ae4fc88f50278405d6a7f99c49"))
+    ( 888100, uint256("0xcabf41533c9b70b3091cd4a94dd0a2b84b13020840ab4b2303762598daf8d483"))
 ;
 
 
