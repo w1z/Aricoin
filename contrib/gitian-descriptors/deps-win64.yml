@@ -1,0 +1,64 @@
+---
+name: "bitcoin-deps"
+suites:
+- "precise"
+architectures:
+- "amd64"
+packages:
+- "mingw-w64"
+- "g++-mingw-w64"
+- "git-core"
+- "zip"
+- "faketime"
+- "psmisc"
+- "wine"
+reference_datetime: "2011-01-30 00:00:00"
+remotes: []
+files:
+- "openssl-1.0.1b.tar.gz"
+- "db-4.8.30.NC.tar.gz"
+- "miniupnpc-1.6.tar.gz"
+- "zlib-1.2.7.tar.gz"
+- "libpng-1.5.12.tar.gz"
+- "qrencode-3.2.0.tar.bz2"
+script: |
+  #
+  export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
+  export FAKETIME=$REFERENCE_DATETIME
+  export TZ=UTC
+  export HOST=i686-w64-mingw32
+  export INSTALLPREFIX=$OUTDIR
+
+  #
+  tar xzf zlib-1.2.7.tar.gz
+  cd zlib-1.2.7
+  make -f win32/Makefile.gcc PREFIX=i686-w64-mingw32- $MAKEOPTS
+  cd ..
+  #
+  
+  tar xzf libpng-1.5.12.tar.gz
+  cd libpng-1.5.12
+    CPPFLAGS="-I../zlib-1.2.7/" LDFLAGS="-L../zlib-1.2.7/" ./configure --disable-shared --prefix="/home/ubuntu/build/libpng-1.5.12/" --host=$HOST
+  make $MAKEOPTS
+  make install
+  
+  
+  cd ..
+  
+  
+  #
+  tar xjf qrencode-3.2.0.tar.bz2
+  cd qrencode-3.2.0
+    png_CFLAGS="-I../libpng-1.5.12" png_LIBS="../libpng-1.5.12/.libs/libpng15.a ../zlib-1.2.7/libz.a" ./configure --prefix="/home/ubuntu/build/qrencode-3.2.0/" --host=$HOST
+    make
+  make install
+    cd ..
+  #
+  
+  zip -r $OUTDIR/bitcoin-deps-1.4.0.zip \
+    $(ls qrencode-*/{qrencode.h,.libs/libqrencode.{,l}a} | sort) \
+    $(ls db-*/build_unix/{libdb_cxx.a,db.h,db_cxx.h,libdb.a,.libs/libdb_cxx-?.?.a} | sort) \
+    $(find openssl-* -name '*.a' -o -name '*.h' | sort) \
+    $(find miniupnpc -name '*.h' -o -name 'libminiupnpc.a' | sort)
+  # Kill wine processes as gitian won't figure out we are done otherwise
+  killall wineserver services.exe explorer.exe winedevice.exe
