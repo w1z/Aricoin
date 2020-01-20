@@ -68,12 +68,18 @@ Block 2,000,001 - 3,000,000, Payout 10 coins per block  [2027-2032]
 Block 3,000,001 and afterwards, Payout 1 coin per block [2032+]
 
 ## Network
+
 Port Connect: 16567
+
 Port RPC: 16568
+
 Magic Bytes:  0xc2, 0xdb, 0xf1,	 0xfd
 
+
 Genesis Hash: 6df743739be39a62277fb5f95dd9bb25c68ac03fd1293183f000315bd1c87e0f
+
 Genesis Merkle Root: 5505f6c2e7ba7a8f2eee698ee6c2d49e019ed18435c29e4f64c70c9c226b83c2
+
 
 
 ## License
