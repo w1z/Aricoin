@@ -13,7 +13,6 @@ Aricoin is a digital P2P currency descended from Bitcoin. Unlike other digital c
 	- 3  transaction confirmations
 	- 50 minted block confirmations
 	- Total coins will be 322,649,400
-	- Difference retarget each block
 
 
 
