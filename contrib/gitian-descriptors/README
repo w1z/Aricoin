@@ -25,7 +25,7 @@ wget 'https://www.zlib.net/fossils/zlib-1.2.7.tar.gz'
 wget 'http://fukuchi.org/works/qrencode/qrencode-3.2.0.tar.bz2'
 wget 'http://78.108.103.11/MIRROR/ftp/png/src/history/libpng15/libpng-1.5.12.tar.gz'
 
- wget 'https://download.qt.io/archive/qt/4.7/qt-everywhere-opensource-src-4.7.4.tar.gz'
+wget 'https://download.qt.io/archive/qt/4.7/qt-everywhere-opensource-src-4.7.4.tar.gz'
 wget 'http://downloads.sourceforge.net/project/boost/boost/1.49.0/boost_1_49_0.tar.bz2'
 
 
