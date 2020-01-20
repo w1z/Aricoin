@@ -51,6 +51,12 @@ http://www.twitter.com/AricoinCurrency/
 
 
 ## Block Rewards
+Genesis block, 3.2m Used for initial launch [2014]
+
+Block 2-961, Random amount between 2841 and 15,000 [2014]
+
+Block 961-15,000, Random amount between 1894 and 10,000 [2014]
+
 Block 15,001-50,000, Payout 1000 coins per block [2014]
 
 Block 50,001-150,000, Payout 500 coins per block [2014]
