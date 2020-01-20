@@ -51,8 +51,8 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion 0.1.3.5
-VIAddVersionKey ProductName aricoin
+VIProductVersion 0.1.3.0
+VIAddVersionKey ProductName Aricoin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
